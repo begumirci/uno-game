@@ -1,0 +1,141 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+   background-color: lightcyan;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+.container{
+   max-width: 1000px;
+   margin: 0 auto;
+   display: flex;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:60px;
+   
+}
+
+.cards{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 60px;
+    height: 100px;
+    color:lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    background-color:#464444;
+    font-size: 40px;
+    border : 2px solid rgba(0,0,0,0.3);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card:hover{
+    transform: rotate(5deg);
+}
+
+.two{
+    transform: rotate(270deg);
+}
+
+.four{
+    transform: rotate(90deg);
+}
+
+.player {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(5%,1fr));
+    max-width: 300px;
+}
+
+.back-cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(5%,1fr));
+    max-width: 20px;
+}
+
+
+.ortala{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    display: flex;
+    gap:80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.open{
+    border-radius:120px 60px / 120px 60px;
+    background-color: white;
+    width:90px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-shadow:
+     1px  1px 0 #000000,
+    -1px -1px 0 #000000,
+    -1px  1px 0 #000000,
+     1px -1px 0 #000000,
+     1px  0   0 #000000,
+    -1px  0   0 #000000,
+     0   -1px 0 #000000,
+     0    1px 0 #000000,
+     2px  2px 2px #000000;
+}
+
+.back {
+    background-image: url('../img/uno.png');
+    background-position: center;
+    background-size:65px ;
+    background-repeat: no-repeat;
+}
+
+.red.card{
+    background-color:#EF553C;
+    color:#EF553C;
+    
+}
+
+.green.card{
+    background-color: #B8DE9A;
+    color:#B8DE9A;
+}
+
+.blue.card {
+    background-color: #71C7E2;
+    color:#71C7E2
+}
+
+.yellow.card {
+    background-color:#FADE7D ;
+    color:#FADE7D;
+
+}
